@@ -1,6 +1,6 @@
+sudo: false
 language: cpp
-compiler:
-  - clang
-  - gcc
-os:
-  - windows
+
+script:
+  - cmake .
+  - cmake --build . -- -j2
