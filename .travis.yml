@@ -1,7 +1,6 @@
-sudo: false
 os: windows
 language: cpp
 
 script:
-  - cmake .
-  - cmake --build .
+  - g++ src/main.cpp -std=c++17 -o travis_gcc_cpp17
+  - ./travis_gcc_cpp17
