@@ -6,7 +6,8 @@
 #include <vector>
 
 namespace templ_lit{
-    std::string operator "" _(const char*, unsigned int);
+	template<typename ...T>
+	std::string t(T&& ...fmt);
 }
 
 #endif //TEMPL_LITERALS_MAIN_HPP
